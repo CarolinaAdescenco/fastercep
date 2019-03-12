@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Faster CEP</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Laila:300,400,500,600,700|Pacifico" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Amatic+SC:400,700|Laila:300,400,500,600,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+    <header>
+      <nav class="navbar is-transparent">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img src="img/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        
+          <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <span class="">
+                      <a href="#" class="icon"><i class="fab fa-lg fa-twitter"></i></a>
+                      <a href="#" class="icon"><i class="fab fa-lg fa-github"></i></a>                      
+                    </span>
+                  </p>
+                  <!-- <p class="control">
+                    <a class="button" href="https://github.com/jgthms/bulma/releases/download/0.7.4/bulma-0.7.4.zip">
+                      <span class="icon">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      <span>Login</span>
+                    </a>
+                  </p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    
+    <!-- Utilizar o componente "hero" -->
+
+
+
+    <main>
+      <section class="sessao-banner has-background-black">
+        <figure>
+          <img src="img/banner-fastercep.jpg" alt="">
+          <figcaption>
+            <h1>Faster CEP</h1>
+          </figcaption>
+        </figure>
+      </section>
+
+      
+
+      <section class="container sessao-sobre">
+        <article class="columns vantagens">
+            <div class="column flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="card flipper">
+                <div class="card-content front">
+                  <i class="fas fa-server"></i>
+                  <p>Independência de serviços</p>
+                </div>
+                <div class="card-content card-back back">
+                  <i class="fas fa-server"></i>
+                  <p>Independência de serviços</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-content">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <p>Alta disponibilidade</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-content">
+                  <i class="fas fa-check"></i>
+                  <p>Tolerância a falhas</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-content">
+                  <i class="far fa-clock"></i>
+                  <p>Rapidez</p>
+                </div>
+              </div>
+            </div>
+            
+          </article>
+        <h2>Sobre</h2>
+        <article>
+          <p><strong>Quickcep</strong> unifica consultas de CEP de diversos serviços em apenas 1 local, o que te permite economizar tempo para realizar suas consultas, utilizando concorrência disponibilizada em Golang para realizar diversas requisições simultâneas em diversos serviços de CEP sendo capaz de selecionar apenas a resposta mais rápida dentro os serviços utilizados.</p>
+
+          <p>Existem diversos serviços de consulta de CEP espalhados e cada um possui um corpo de resposta diferente, Quickcep consegue consultar estes serviços e retornar uma resposta uniforme independente de qual foi a fonte de consulta, assim você não precisa se preocupar com qual foi o serviço que respondeu e sim com os dados em si, além de ter outros serviços de “backup” caso algum deles falhe, isso significa que você sempre terá uma resposta válida o que torna suas consultas “a prova de falhas”.</p>
+        </article>
+
+      </section>
+
+      <section class="container sessao-planos">
+        <article class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-header-title">
+                  <h3>Free</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </article>
+        
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p class="has-padding">Contato: contato@quickcep.com.br</p>
+        <p>
+          Copyright 2019 | <strong>QuickCEP</strong> by <a href="#">Carolina A</a>. 
+        </p>
+      </div>
+    </footer>
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
