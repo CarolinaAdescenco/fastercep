@@ -1,168 +1,146 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="pt-br">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <title>Faster CEP</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bulma.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="css/all.min.css"> -->
-
-  <!-- <link href="https://fonts.googleapis.com/css?family=Laila:300,400,500,600,700|Pacifico" rel="stylesheet"> -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
+  <!-- Lightbox -->
+  <link rel="stylesheet" type="text/css" href="assets/lightbox/css/lightbox.min.css">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Acme|Amatic+SC:400,700|Laila:300,400,500,600,700" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/main.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-  <meta name="theme-color" content="#fafafa">
+  <!-- <title><?php bloginfo('title').wp_title()?></title> -->
+
+  <title>Projeto Base</title>
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
-    
-  <section class="hero is-fullheight hero-home">
-    <!-- Hero head: will stick at the top -->
-    <div class="hero-head">
-      <header class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item">
-              <img src="img/bulma-logo.png" alt="Logo">
-            </a>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenuHeroC" class="navbar-menu">
-            <div class="navbar-end">
-              <a class="navbar-item is-active">
-                Sobre
-              </a>
-              <a class="navbar-item">
-                Planos
-              </a>
-              
-              <span class="navbar-item">
-                <a class="button is-success is-inverted">
-                  <span class="icon">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span>Contato</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
   
-    <!-- Hero content: will be in the middle -->
-    <div class="hero-body">
-      <div class="container">
-
-        <div class="columns">
-            <div class="column is-two-fifths">
-                <h1 class="title">
-                  Faster CEP
-                </h1>
-                <h2 class="subtitle">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias maxime atque vitae nesciunt. Quod quidem impedit voluptate.
-                </h2>
-            </div>
-        </div>
-      </div>
-    </div>  
-  </section>
-
-  <section class="hero is-fullheight sessao-sobre">
+  <header class="w-100">
     <div class="container">
-      <article class="columns vantagens hero-head">
-          <div class="column">
+      <nav class="navbar navbar-expand-lg justify-content-between px-0">
+        <a class="navbar-brand col-9 col-md-3" href="index.html">
+          <img src="assets/images/bulma-logo.png" alt="Logo" title="Logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler d-lg-none p-3" type="button" data-toggle="collapse" data-target="#principalMenu"
+          aria-controls="principalMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="principalMenu">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item mx-0 px-2 py-1 active">
+              <a class="nav-link" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item mx-0 px-2 py-1">
+              <a class="nav-link" href="#plan">Planos</a>
+            </li>
+            <li class="nav-item mx-0 px-2 py-1">
+              <a class="nav-link " href="#contact"><i class="fas fa-envelope"></i> Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="banner pb-5">
+    <div class="slider--home">
+      <div class="slider--home-item">
+        <figure>
+          <img src="assets/images/banner-fastercep.jpg" alt="Faster Cep" title="Faster Cep"
+            class="img-fluid">
+          <figcaption class="align-items-center">
+            <div class="container">
+              <div class="row mx-0">
+                <div class="col-12 col-md-5">
+                  <h1 class="d-block mb-2">Faster Cep</h1>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>               
+                </div>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="section-about">
+    <div class="container">
+      <div class="row mx-0 vantagens">
+        <div class="col-12 col-md-3 my-2 my-md-0">
             <div class="card">
               <div class="card-content">
                 <i class="fas fa-server"></i>
                 <p>Independência de serviços</p>
               </div>
             </div>
-          </div>
-          <div class="column">
+        </div>
+        <div class="col-12 col-md-3 my-2 my-md-0">
             <div class="card">
               <div class="card-content">
                 <i class="fas fa-cloud-upload-alt"></i>
                 <p>Alta disponibilidade</p>
               </div>
             </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <div class="card-content">
-                <i class="fas fa-check"></i>
-                <p>Tolerância a falhas</p>
-              </div>
+        </div>
+        <div class="col-12 col-md-3 my-2 my-md-0">
+          <div class="card">
+            <div class="card-content">
+              <i class="fas fa-check"></i>
+              <p>Tolerância a falhas</p>
             </div>
           </div>
-          <div class="column">
-            <div class="card">
-              <div class="card-content">
-                <i class="far fa-clock"></i>
-                <p>Rapidez</p>
-              </div>
+        </div>
+        <div class="col-12 col-md-3 my-2 my-md-0">
+          <div class="card">
+            <div class="card-content">
+              <i class="far fa-clock"></i>
+              <p>Rapidez</p>
             </div>
-          </div>          
-        </article>
-        <div class="columns is-vcentered hero-body">          
-          <article class="column">
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5 mx-0 align-items-center">
+        <div class="col-12 col-md-6">
             <h2>Sobre</h2>
             <p><strong>Quickcep</strong> unifica consultas de CEP de diversos serviços em apenas 1 local, o que te permite economizar tempo para realizar suas consultas, utilizando concorrência disponibilizada em Golang para realizar diversas requisições simultâneas em diversos serviços de CEP sendo capaz de selecionar apenas a resposta mais rápida dentro os serviços utilizados.</p>  
             <p>Existem diversos serviços de consulta de CEP espalhados e cada um possui um corpo de resposta diferente, Quickcep consegue consultar estes serviços e retornar uma resposta uniforme independente de qual foi a fonte de consulta, assim você não precisa se preocupar com qual foi o serviço que respondeu e sim com os dados em si, além de ter outros serviços de “backup” caso algum deles falhe, isso significa que você sempre terá uma resposta válida o que torna suas consultas “a prova de falhas”.</p>
-          </article>
-          <aside class="column">
-            <img src="http://placehold.it/600x300" alt="">
-          </aside>
-        </div>        
-      </div>
-    </section>
-
-    <div class="container">
-      <hr>
-    </div>
-
-
-    <section class="hero is-fullheight ">
-      <div class="container">
-        <div class="hero-body planos">
-          <div class="has-text-centered">
-            <h2>Conheça nossos planos</h2>
-          </div>
         </div>
+        <div class="col-12 col-md-6 my-3 my-md-0">
+            <img class="img-fluid" src="http://placehold.it/600x300" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="">
-
-          <div class="columns">
-            <div class="column">
-              <div class="card">
-                
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content has-text-centered">
-                      <p class="title is-4">Free</p>
-                      <p class="subtitle is-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
+  <section class="section-plan" id="plan">
+    <div class="container">
+      <h2>Conheça nossos planos</h2>
+      <div class="row mx-0 slider--planos">
+        <div class="col-12 col-md-4">
+            <div class="card">                
+                <div class="card-body">
+  
+                  <div class="card-title text-center">
+                    <h3 class="title is-4">Free</h3>
+                    <p class="subtitle is-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                   </div>
   
                   <hr>
@@ -178,23 +156,20 @@
                     </ul>
                   </div>
   
-                  <div class="buttons has-addons is-centered">
+                  <div class="text-center">
                     <button class="btn btn-contact">Saiba mais</button>
                   </div>
   
                 </div>
               </div>
-    
-            </div>
-            <div class="column">
-              <div class="card card-pro">
-                
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content has-text-centered">
-                      <p class="title is-4">Pro</p>
-                      <p class="subtitle is-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card">                
+                <div class="card-body">
+  
+                  <div class="card-title text-center">
+                    <h3 class="title is-4">Pro</h3>
+                    <p class="subtitle is-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                   </div>
   
                   <hr>
@@ -204,29 +179,26 @@
                       <li><i class="fa fa-check active"></i> Lorem ipsum dolor sit.</li>
                       <li><i class="fa fa-check active"></i> Lorem ipsum dolor sit.</li>
                       <li><i class="fa fa-check active"></i> Lorem ipsum dolor sit.</li>
-                      <li><i class="fa fa-check active"></i> Lorem ipsum dolor sit.</li>
-                      <li><i class="fa fa-check active"></i> Lorem ipsum dolor sit.</li>
-                      <li><i class="fa fa-check active"></i> Lorem ipsum dolor sit.</li>
+                      <li><i class="fa fa-check"></i> Lorem ipsum dolor sit.</li>
+                      <li><i class="fa fa-check"></i> Lorem ipsum dolor sit.</li>
+                      <li><i class="fa fa-check"></i> Lorem ipsum dolor sit.</li>
                     </ul>
                   </div>
   
-                  <div class="buttons has-addons is-centered">
+                  <div class="text-center">
                     <button class="btn btn-contact btn-pro">Saiba mais</button>
                   </div>
   
                 </div>
               </div>
-    
-            </div>
-            <div class="column">
-              <div class="card">
-                
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content has-text-centered">
-                      <p class="title is-4">Premium</p>
-                      <p class="subtitle is-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card">                
+                <div class="card-body">
+  
+                  <div class="card-title text-center">
+                    <h3 class="title is-4">Enterprise</h3>
+                    <p class="subtitle is-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                   </div>
   
                   <hr>
@@ -236,91 +208,132 @@
                       <li><i class="fa fa-check active"></i> Lorem ipsum dolor sit.</li>
                       <li><i class="fa fa-check active"></i> Lorem ipsum dolor sit.</li>
                       <li><i class="fa fa-check active"></i> Lorem ipsum dolor sit.</li>
-                      <li><i class="fa fa-check active"></i> Lorem ipsum dolor sit.</li>
-                      <li><i class="fa fa-check active"></i> Lorem ipsum dolor sit.</li>
-                      <li><i class="fa fa-check active"></i> Lorem ipsum dolor sit.</li>
+                      <li><i class="fa fa-check"></i> Lorem ipsum dolor sit.</li>
+                      <li><i class="fa fa-check"></i> Lorem ipsum dolor sit.</li>
+                      <li><i class="fa fa-check"></i> Lorem ipsum dolor sit.</li>
                     </ul>
                   </div>
   
-                  <div class="buttons has-addons is-centered">
+                  <div class="text-center">
                     <button class="btn btn-contact">Saiba mais</button>
                   </div>
   
                 </div>
               </div>
-    
-            </div>          
-            
-        </div>
         </div>
       </div>
-
-    </section>
-
-    <div class="container">
-      <hr>
     </div>
+  </section>
 
-    <section class="hero is-fullheight form-contato">
-      <div class="hero-head">
-        <div class="container">
-          <div>
-            <h2>Fale conosco</h2>
+  <section class="section-contact mb-5" id="contact">
+    <div class="container">
+      <h2>Fale conosco</h2>
+      <form id="formulario-contato" name="formulario-contato" method="POST">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-4 input-field">
+              <input id="name" type="text" class="validate">
+              <label for="name">Nome</label>
+            </div>
+            
+            <div class="col-10 col-md-4 input-field">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+
+            <div class="col-10 col-md-4 input-field">
+              <input id="telefone" type="text" class="validate telefone">
+              <label for="telefone">Telefone</label>
+            </div>
+            
+            <div class="col-10 col-md-12 input-field">
+              <input id="mensagem" type="text" class="validate">
+              <label for="mensagem">Mensagem</label>
+            </div>
+            <div class="col-10 col-md-5 text-center mx-auto">
+              <button type="submit" class="btn btn-contact btn-block">Enviar</button>
+            </div> 
           </div>
+        </form> 
+    </div>
+  </section>
+
+  <div class="container d-block d-md-none">
+    <hr class="my-5">
+  </div>
+
+  <footer class="pb-2 mt-5">
+    <div class="container">
+      <div class="row mx-0 align-items-center justify-content-center justify-content-md-between py-4">
+        <div class="col-12 col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
+          <h3 class="mb-4 mb-md-2">Atendimento</h3>
+
+          <div class="row mx-0 align-items-center justify-content-center justify-content-lg-start">
+            <span class="d-flex mb-2 mb-md-0 align-items-center mr-3">
+              
+              <a href="tel:+5511996171878" class=""><i class="fa fa-phone mr-1"></i> (11) 99617-0000</a>
+            </span>
+            <span class="d-flex mb-2 mb-md-0 align-items-center">              
+              <a href="mailto:contato@contato.com.br"><i class="fa fa-envelope mr-1"></i> contato@contato.com.br</a>
+            </span>
+          </div>
+
+          <div class="row mx-0 align-items-center justify-content-center justify-content-lg-start mt-md-2">
+            <span class="d-flex align-items-center">
+              
+              <a href="https://www.google.com/maps/search/Rua+Bar%C3%A3o+de+Jaceguai+n%C2%BA+1669%2C+Centro+-+Mogi+das+Cruzes+-+SP" target="_blank" class=" "><i class="fa fa-map-marker mr-1"></i> Endereço da empresa vem aqui, 100 - Centro - São Paulo - SP</span>
+            </span>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-2 text-center text-lg-left">
+          <a href="#" target="_blank" class="fab fa-facebook fa-lg mr-2"></a>
+          <a href="#" target="_blank" class="fab fa-instagram fa-lg mr-2"></a>
+          <a href="#" target="_blank" class="fab fa-linkedin fa-lg"></a>
         </div>
       </div>
-        <div class="hero-body">
-          <div class="container">
-            <div class="field">
-              <label class="label">Nome</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Seu nome">
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">E-mail</label>
-              <div class="control">
-                <input class="input" type="email" placeholder="Seu e-mail">
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Telefone</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Seu telefone">
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Mensagem</label>
-              <div class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
-              </div>
-            </div>                
-            <div class="field is-grouped">
-              <div class="control">
-                <button class="btn btn-pro is-link">Enviar</button>
-              </div>
-            </div>
-          </div>
+
+      <hr class="my-4">
+
+      <div class="row mx-0 align-items-center justify-content-between pb-4 text-center text-md-left">
+        <p class="col-12 col-md-auto mb-4 mb-md-0">
+          Copyright 2019 -  Faster Cep  
+        </p>
+        <div class="col-12 col-md-auto">
+          <a href="https://actmob.com" target="_blank"> Carolina A. </a>
         </div>
-    </section>
+      </div>
+    </div>
+  </footer>
 
+  <a href="#" id="backToTop" class="d-flex align-items-center justify-content-center rounded-circle   "
+    style="width: 50px; height: 50px; position: fixed; bottom: 15px; right: 15px;">
+    <i class="fa fa-angle-up"></i>
+  </a>
 
+  <!-- Essentials -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
+   <!-- JQuery Mask -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.18.0/jquery.validate.min.js" integrity="sha256-uzabfEBBxmdH/zDxYYF2N7MyYYGkkerVpVwRixL92xM=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.18.0/localization/messages_pt_BR.min.js" integrity="sha256-aG9bQHapeVjWR3GT0/i/1NR1g2H+LfwbnPpRR6qqo0Y=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js" integrity="sha256-u7MY6EG5ass8JhTuxBek18r5YG6pllB9zLqE4vZyTn4=" crossorigin="anonymous"></script>
+   
+   <!-- SweetAlert -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.0/sweetalert2.all.min.js" integrity="sha256-FABHlNZdWEEvD1Ge8L18a01NTTLNiZ4uD8hdl5QG5BI=" crossorigin="anonymous"></script>
 
-
-
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <!-- Includes -->
+  <!-- SlickJS -->
+  <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+  <!-- Lightbox -->
+  <script type="text/javascript" src="assets/lightbox/js/lightbox.min.js"></script>
+  <!-- Main JS -->
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
 </html>
