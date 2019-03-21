@@ -5,10 +5,25 @@ $cor-padrao-hover: #780a43;
 $cor-btn-hover: #580832;
 $gray: #e5e5e5;
 $cinza: #aaa;
+$titulos: #484848;
 $color-check: #1bd59a;
 $margin-section: 2rem auto;
 $margin-titulos: 1rem 0;
 $body: #f9f9f9;
+%box-shadow{
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+%width{
+  @media(min-width: 992px){
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
 
 @mixin font-size($size) {
     font-size: $size + px;
@@ -102,13 +117,13 @@ $body: #f9f9f9;
 	  font-size: 1.15rem;
 	  font-weight: 300;
     margin-bottom: .5rem;
+    color: $titulos;
   }
 
   h2{
-		margin: $margin-titulos;
 		font-size: 2.5rem;
 		font-weight: 600;
-		color: $cor-padrao-hover;
+		color: $titulos;
 	}
   
   @media (min-width: 1200px) {
@@ -152,11 +167,10 @@ $body: #f9f9f9;
     z-index: 1;
 
     .nav-item{
-      .nav-link{
-        
-          color: $cor-padrao-hover;
-          font-size: 1.25rem;
-      
+      .nav-link{        
+          color: $branco;
+          font-weight: 300;
+          font-size: 1.25rem;     
       }
     }
   }
@@ -164,12 +178,12 @@ $body: #f9f9f9;
   .btn {
     white-space: normal;
     padding: .5rem 1.5rem;
+    border-radius: 0;
   }
 
   .btn-contact{
     background-color: $gray;
     border: 1px solid $gray;
-    border-radius: 0;
     color: $preto;
     font-weight: 600;
     
@@ -222,7 +236,6 @@ $body: #f9f9f9;
   }
 
   footer{
-
     h3{
       color: $cinza;
     }
@@ -232,7 +245,24 @@ $body: #f9f9f9;
       font-weight: 300;
       color: $cinza;
     }
+
+    .fab {
+      &:hover{
+          color: $cor-padrao-hover;        
+      }
+    }
+
+    a{
+      &:hover{
+        color: $titulos;
+      }
+    }
   
+  }
+
+  #backToTop{
+    color: $branco;
+    background-color: $cor-padrao-hover;
   }
 
   .banner{
@@ -248,35 +278,37 @@ $body: #f9f9f9;
       figcaption{
         h1{          
           font-size: 3rem;
-          color: $preto;
+          color: $branco;
+        }
+
+        h2{
+          color: $branco;
+          font-size: 1.5rem;
           font-weight: 300;
         }
       }
     }
   }
 
-  .section-about, .section-plan{
-    @media(min-width: 992px){
-      width: 100vw;
-      height: 100vh;
-    }
-  }
+  .section-about{
+    @extend %width;
 
-  .vantagens{
-	  margin: $margin-section;
-
-		.card{
-
+    .card{
 			transform: scale(1);
       transition: all 300ms ease;
       border-radius: 0;
       padding: 1rem;
+      @extend %box-shadow;
 			
 			&:hover{
 				background-color: $cor-padrao-hover;
 				transform: scale(1.05);
 				transition: all 300ms ease;
-				color: $branco;
+        color: $branco;
+        
+        p{
+          color: $branco;
+        }
 			}
 
 			.card-content, .card-body{
@@ -291,13 +323,23 @@ $body: #f9f9f9;
   }
 
   .section-plan{
+    @extend %width;
 
     h2{
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
       text-align: center;
     }
     .card{
       border-radius: 0;
+      @extend %box-shadow;
+    }
+
+    .slick-track{
+      height: 320px;
+
+      @media(min-width: 992px){
+        height: 410px;
+      }
     }
 
     .card-pro{
@@ -336,7 +378,7 @@ $body: #f9f9f9;
 
   .input-field {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 3rem;
   }
   
   .input-field{
@@ -371,6 +413,7 @@ $body: #f9f9f9;
     }
   }
 }
+
 
 
 

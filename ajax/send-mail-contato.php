@@ -33,9 +33,9 @@
 
         //Content
         $mail->isHTML(true);
-        $mail->Subject = 'Contato pelo site - LM Prime';
+        $mail->Subject = 'Contato pelo site - Faster Cep';
         $mail->Body    = "
-        <h1>Contato - LM Prime</h1>
+        <h1>Contato - Faster Cep</h1>
         <b>Nome: </b>$nome<br>
         <b>E-mail: </b>$email<br>
         <b>Telefone: </b>$telefone<br>

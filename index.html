@@ -34,15 +34,15 @@
   
   <header class="w-100">
     <div class="container">
-      <nav class="navbar navbar-expand-lg justify-content-between px-0">
-        <a class="navbar-brand col-9 col-md-3" href="index.html">
+      <nav class="navbar navbar-expand-lg justify-content-end px-0 pt-md-5">
+        <!-- <a class="navbar-brand col-9 col-md-3" href="index.html">
           <img src="assets/images/bulma-logo.png" alt="Logo" title="Logo" class="img-fluid">
-        </a>
+        </a> -->
         <button class="navbar-toggler d-lg-none p-3" type="button" data-toggle="collapse" data-target="#principalMenu"
           aria-controls="principalMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
+          <i class="fa fa-bars text-white"></i>
         </button>
-        <div class="collapse navbar-collapse" id="principalMenu">
+        <div class="collapse navbar-collapse text-right" id="principalMenu">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item mx-0 px-2 py-1 active">
               <a class="nav-link" href="#about">Sobre</a>
@@ -59,28 +59,23 @@
     </div>
   </header>
 
-  <div class="banner pb-5">
-    <div class="slider--home">
-      <div class="slider--home-item">
-        <figure>
-          <img src="assets/images/banner-fastercep.jpg" alt="Faster Cep" title="Faster Cep"
-            class="img-fluid">
-          <figcaption class="align-items-center">
-            <div class="container">
-              <div class="row mx-0">
-                <div class="col-12 col-md-5">
-                  <h1 class="d-block mb-2">Faster Cep</h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>               
-                </div>
-              </div>
+  <section class="banner">    
+    <figure>
+      <img src="assets/images/banner-fastercep-2.png" alt="Faster Cep" title="Faster Cep" class="img-fluid">
+      <figcaption class="align-items-center">
+        <div class="container">
+          <div class="row mx-0">
+            <div class="col-12 col-md-5">
+              <h1 class="d-block mb-2">Faster Cep</h1>
+              <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>               
             </div>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
+          </div>
+        </div>
+      </figcaption>
+    </figure>    
+  </section>
 
-  <section id="about" class="section-about">
+  <section id="about" class="section-about mt-5">
     <div class="container">
       <div class="row mx-0 vantagens">
         <div class="col-12 col-md-3 my-2 my-md-0">
@@ -117,27 +112,27 @@
         </div>
       </div>
 
-      <div class="row my-5 mx-0 align-items-center">
+      <div class="row my-5 py-3 mx-0 align-items-center">
         <div class="col-12 col-md-6">
             <h2>Sobre</h2>
             <p><strong>Quickcep</strong> unifica consultas de CEP de diversos serviços em apenas 1 local, o que te permite economizar tempo para realizar suas consultas, utilizando concorrência disponibilizada em Golang para realizar diversas requisições simultâneas em diversos serviços de CEP sendo capaz de selecionar apenas a resposta mais rápida dentro os serviços utilizados.</p>  
             <p>Existem diversos serviços de consulta de CEP espalhados e cada um possui um corpo de resposta diferente, Quickcep consegue consultar estes serviços e retornar uma resposta uniforme independente de qual foi a fonte de consulta, assim você não precisa se preocupar com qual foi o serviço que respondeu e sim com os dados em si, além de ter outros serviços de “backup” caso algum deles falhe, isso significa que você sempre terá uma resposta válida o que torna suas consultas “a prova de falhas”.</p>
         </div>
-        <div class="col-12 col-md-6 my-3 my-md-0">
-            <img class="img-fluid" src="http://placehold.it/600x300" alt="">
+        <div class="col-12 col-md-6 pt-4 my-3 my-md-0">
+            <img class="img-fluid" src="assets/images/banner-sobre.jpg" alt="">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section-plan" id="plan">
+  <section id="plan" class="section-plan">
     <div class="container">
       <h2>Conheça nossos planos</h2>
       <div class="row mx-0 slider--planos">
         <div class="col-12 col-md-4">
             <div class="card">                
                 <div class="card-body">
-  
+
                   <div class="card-title text-center">
                     <h3 class="title is-4">Free</h3>
                     <p class="subtitle is-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -231,26 +226,26 @@
       <form id="formulario-contato" name="formulario-contato" method="POST">
           <div class="row justify-content-center">
             <div class="col-10 col-md-4 input-field">
-              <input id="name" type="text" class="validate">
+              <input id="name" name="nome" type="text" class="validate">
               <label for="name">Nome</label>
             </div>
             
             <div class="col-10 col-md-4 input-field">
-              <input id="email" type="email" class="validate">
+              <input id="email" name="email" type="email" class="validate">
               <label for="email">Email</label>
             </div>
 
             <div class="col-10 col-md-4 input-field">
-              <input id="telefone" type="text" class="validate telefone">
+              <input id="telefone" name="telefone" type="text" class="validate telefone">
               <label for="telefone">Telefone</label>
             </div>
             
             <div class="col-10 col-md-12 input-field">
-              <input id="mensagem" type="text" class="validate">
+              <input id="mensagem" name="mensagem" type="text" class="validate">
               <label for="mensagem">Mensagem</label>
             </div>
             <div class="col-10 col-md-5 text-center mx-auto">
-              <button type="submit" class="btn btn-contact btn-block">Enviar</button>
+              <button type="submit" class="btn btn-pro btn-block">Enviar</button>
             </div> 
           </div>
         </form> 
@@ -305,7 +300,7 @@
     </div>
   </footer>
 
-  <a href="#" id="backToTop" class="d-flex align-items-center justify-content-center rounded-circle   "
+  <a href="#" id="backToTop" class="d-flex align-items-center justify-content-center rounded-circle"
     style="width: 50px; height: 50px; position: fixed; bottom: 15px; right: 15px;">
     <i class="fa fa-angle-up"></i>
   </a>
